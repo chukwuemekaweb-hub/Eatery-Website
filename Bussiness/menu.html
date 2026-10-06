@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Our Menu </title>
+</head>
+<body>
+
+    
+    <header class="banner-box">
+        <div class="header">
+            <nav>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img src="images/logo.PNG" alt="">
+                    </div>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                        
+                        <div>
+                            <button class="cart-button" onclick="openCart()">
+                            🛒 <span id="cartNumber">0</span>
+                            </button>
+                        </div>
+
+                            <button class="menu-btn" onclick="openMenu()">&#9776</button>
+                    
+                </div>
+            </nav>
+        </div>
+
+        <div class="back-menu" id="backMenu" onclick="closeMenu()">
+            X
+        </div>
+
+        <div class="sideBarModal" id="sideBar">
+            <div class="modal">
+                <ul class="sideUl" id="sideUl">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <nav class="menu-nav">
+            
+            <ul class="menu-ul">
+                <li><a href="#">
+                    All Items
+                </a></li>
+
+                <li><a href="#">
+                    Our Best Sellers
+                </a></li>
+
+                <li><a href="#">
+                    Swallons
+                </a></li>
+
+                <li><a href="#">
+                    Rice Dishes
+                </a></li>
+
+                <li><a href="#">
+                    Proteins
+                </a></li>
+
+                <li><a href="#">
+                    Soups
+                </a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <main class="menu-main">
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smokey and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+               <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button> 
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+               <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button> 
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+              <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>  
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Chips</h2>
+                <p>Tender, smok and flavourful grilled chicken with Special seasonings.</p>
+                <h3>N4000</h3>
+                 <button onclick="addToCart('Chicken + Chips', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <div id="cartModal" class="cart-modal-overlay">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <div class="cart-header-left">
+                    <div class="cart-icon-circle">🛒 <span id="modalCartCount">0</span></div>
+
+                    <div>
+                    <h2>Your Cart</h2>
+                    <p>Good food is always a good idea ♥</p>
+                    </div>
+                </div>
+                <button class="close-btn" onclick="closeCart()">
+                    ✕
+                </button>
+            </div>
+
+            <div class="cart-body">
+                <div id="cartItemsContainer" class="cart-items">
+
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+
+                    <div class="summary-line">
+                    <span>Subtotal (<span id="subtotalCount">0</span> items)</span>
+                    <span id="subtotalPrice">₦0</span>
+                    </div>
+
+                    <div class="summary-line">
+                    <span>Delivery Fee</span><span>₦1500</span>
+                    </div>
+
+                    <div class="summary-line total-line">
+                    <span>Total</span><span id="totalPrice">₦0</span>
+                    </div>
+
+                    <button class="whatsapp-btn" onclick="orderViaWhatsApp()">
+                        💬 Order via WhatsApp
+                    </button>
+
+                    <p class="secure-text">🔒 Your information is safe and secure.</p>
+                </div>
+            </div>
+
+            <button class="continue-btn" onclick="closeCart()">
+                ← Continue Ordering
+            </button>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-gird">
+            <div class="footer-text">
+                <img src="images/logo.PNG" alt="">
+
+                <p class="footer-p">
+                Fresh Nigerian Meals, Made with love and served with the taste of home.
+                </p>
+
+
+            </div>
+
+            <div class="footer-text2">
+                <h3 class="footer-h3">
+                Contact Us
+                </h3>
+
+                <p class="footer-p2">
+                    +234 801 2345 678 <br>
+                    +234 801 2345 678 <br>
+                    Mamakitchen@gmail.com
+                </p>
+            </div>
+
+            <div class="footer-text3">
+                <h3 class="footer-h3">
+                Address
+                </h3>
+
+                <p class=".footer-p3">
+                15 Effurun-Sapele Road. <br>
+                Warri, Delta State, Nigeria.   
+                </p>
+            </div>
+
+            <div class="footer-text4">
+                <h3 class="footer-h3">
+                Opening Hours
+                </h3>
+
+                <p class="footer-p4">
+                Mon - Sat: <br>
+                10:00 AM - 9:00 PM 
+                <br>
+                <br>
+                Sunday: <br>
+                12:00 PM - 7:00 PM
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">&copy 2026 De Haven Hub, All rights reserved.</p> 
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
