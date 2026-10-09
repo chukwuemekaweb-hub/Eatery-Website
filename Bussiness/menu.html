@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Our Menu </title>
+</head>
+<body>
+
+    
+    <header class="banner-box">
+        <div class="header">
+            <nav>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img src="images/logo.PNG" alt="">
+                    </div>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                        
+                        <div>
+                            <button class="cart-button" onclick="openCart()">
+                            🛒 <span id="cartNumber">0</span>
+                            </button>
+                        </div>
+
+                            <div>
+                        <button class="menu-btn" onclick="openMenu()">&#9776</button>
+                    </div>
+
+                    <div class="back-menu" id="backMenu" onclick="closeMenu()">
+                     X
+                    </div>
+
+                    <div class="sideBarModal" id="sideBar">
+                        <div class="modal">
+                            <ul class="sideUl" id="sideUl">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+        
+    </header>
+
+
+    <main class="menu-main">
+        <div class="grid-box">
+            <img src="images/bbqchicken.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken</h2>
+                <p>Tender, smokey and flavourful grilled chicken with Special seasonings.</p>
+                <h3>&#8358;4,000</h3>
+                <button onclick="addToCart('Chicken', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/bbqfish.jpeg" alt="">
+            <div class="box-text">
+                <h2>BBQ Fish</h2>
+                <p>Tender, smokey and flavourful grilled Fish with Special seasonings.</p>
+                <h3>&#8358;15,000</h3>
+                <button onclick="addToCart('Fish', 15000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/yamandeggsauce.jpeg" alt="">
+            <div class="box-text">
+                <h2>Yam and Egg Sauce</h2>
+                <p> Well Prepared Yam and Egg Sauce</p>
+                <h3>&#8358;3,500</h3>
+                 <button onclick="addToCart('Yam and Egg Sauce', 3500)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/egusiandpoundedyam.jpeg" alt="">
+            <div class="box-text">
+               <h2>Pounded Yam and Egusi Soup</h2>
+                <p>Well prepared Pounded Yam and egusi soup
+                <h3>&#8358;15,000</h3>
+                 <button onclick="addToCart('Pounded Yam with Egusi Soup', 15000)">Add to Cart</button> 
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/whitericeandstew.jpeg" alt="">
+            <div class="box-text">
+               <h2>White Rice and Stew</h2>
+                <p>White Rice with Delicious Stew with Assosrted Meat</p>
+                <h3>&#8358;5,000</h3>
+                 <button onclick="addToCart('White Rice With Stew', 5000)">Add to Cart</button> 
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/chickenandplaintain.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken and Plantain</h2>
+                <p>Pepper Chicked with Fried Plaintain.</p>
+                <h3>&#8358;6,000</h3>
+                 <button onclick="addToCart('Pepper Chicken and Plaintain', 6000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/steak.jpeg" alt="">
+            <div class="box-text">
+                <h2>Steak</h2>
+                <p>Well Prepared Steak</p>
+                <h3>&#8358;15,000</h3>
+                 <button onclick="addToCart('Steak', 15000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/okrosoup.jpeg" alt="">
+            <div class="box-text">
+                <h2>Okro Soup</h2>
+                <p> Well Prepared Okro Soup with Garri</p>
+                <h3>&#8358;5,000</h3>
+                 <button onclick="addToCart('Okro and Garri ', 5000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/banner.PNG" alt="">
+            <div class="box-text">
+                <h2>Smokey Jollof Rice</h2>
+                <p>Smokey Jollof Rice with Plaintain Chicken and Salad</p>
+                <h3>&#8358;10,000</h3>
+                 <button onclick="addToCart('Jollof Rice', 10000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1433.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Goat Meat</h2>
+                <p>Well Prepared Goat meat.</p>
+                <h3>&#8358;10,000</h3>
+                 <button onclick="addToCart('Peppered Goat Meat', 10000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1434.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Chicken Pepper Soup</h2>
+                <p>Well Prepared chicken Peper Soup with Boiled Plaintain.</p>
+                <h3>&#8358;6,000</h3>
+                 <button onclick="addToCart('Chicken Pepper Soup', 6000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1435.JPG.jpeg" alt="">
+            <div class="box-text">
+              <h2>Goat Meat Pepper Soup</h2>
+                <p>Well Prepared Goat Pepper Soup.</p>
+                <h3>&#8358;6,500</h3>
+                 <button onclick="addToCart('Goat Meat Peppersoup', 6500)">Add to Cart</button>  
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1436.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Nkwobi</h2>
+                <p>Well Prepared Nkwobi with Ugba.</p>
+                <h3>&#8358;15,000</h3>
+                 <button onclick="addToCart('Nkwobi and Ugba', 15000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1437.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Berry Smoothie</h2>
+                <p>Chilled Strawberry Smothie</p>
+                <h3>&#8358;5,000</h3>
+                 <button onclick="addToCart('Berry Smoothie', 5000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1438.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Banana Smothie</h2>
+                <p>Chilled Bananna Smothie</p>
+                <h3>&#8358;6,000</h3>
+                 <button onclick="addToCart('Banana Smothie', 6000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1439.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Berry and Mango Smothie</h2>
+                <p>Chilled Strawberry and Mango Smothie</p>
+                <h3>&#8358;6,000</h3>
+                 <button onclick="addToCart('Strawberry & Mango Smothie', 6000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1440.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Pineapple Smothie</h2>
+                <p> Chilled Pineapple Smothie.</p>
+                <h3>&#8358;5,000</h3>
+                 <button onclick="addToCart('Pineapple Smothie', 5000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1442.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Jollof Spagethie</h2>
+                <p>Well Prepared Jollof Spagethie</p>
+                <h3>&#8358;4,000</h3>
+                 <button onclick="addToCart('Jollof Spag', 4000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1444.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Afang Soup</h2>
+                <p>Well Prepared Afang Soup with Garri</p>
+                <h3>&#8358;7,000</h3>
+                 <button onclick="addToCart('Afang Soup & Garri', 7000)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="grid-box">
+            <img src="images/IMG_1446.JPG.jpeg" alt="">
+            <div class="box-text">
+                <h2>Ofe Akwu</h2>
+                <p>Well Prepared & Delicious Ofe Akwu with White Rice</p>
+                <h3>&#8358;6,000</h3>
+                 <button onclick="addToCart('Ofe Akwu & Rice', 6000)">Add to Cart</button>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <div id="cartModal" class="cart-modal-overlay">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <div class="cart-header-left">
+                    
+
+                    <div>
+                    <h2>Your Cart</h2>
+                    <p>Good food is always a good idea ♥</p>
+                    </div>
+                </div>
+                <button class="close-btn" onclick="closeCart()">
+                    ✕
+                </button>
+            </div>
+
+            <div class="cart-body">
+                <div id="cartItemsContainer" class="cart-items">
+
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+
+                    <div class="summary-line">
+                    <span>Subtotal (<span id="subtotalCount">0</span> items)</span>
+                    <span id="subtotalPrice">₦0</span>
+                    </div>
+
+                    <div class="summary-line">
+                    <span>Delivery Fee</span><span>₦1500</span>
+                    </div>
+
+                    <div class="summary-line total-line">
+                    <span>Total</span><span id="totalPrice">₦0</span>
+                    </div>
+
+                    <button class="whatsapp-btn" onclick="orderViaWhatsApp()">
+                        💬 Order via WhatsApp
+                    </button>
+
+                    <p class="secure-text">🔒 Your information is safe and secure.</p>
+                </div>
+            </div>
+
+            <button class="continue-btn" onclick="closeCart()">
+                ← Continue Ordering
+            </button>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-gird">
+            <div class="footer-text">
+                <img src="images/logo.PNG" alt="">
+
+                <p class="footer-p">
+                Fresh Nigerian Meals, Made with love and served with the taste of home.
+                </p>
+
+
+            </div>
+
+            <div class="footer-text2">
+                <h3 class="footer-h3">
+                Contact Us
+                </h3>
+
+                <p class="footer-p2">
+                    +234 801 2345 678 <br>
+                    +234 801 2345 678 <br>
+                    Mamakitchen@gmail.com
+                </p>
+            </div>
+
+            <div class="footer-text3">
+                <h3 class="footer-h3">
+                Address
+                </h3>
+
+                <p class=".footer-p3">
+                15 Effurun-Sapele Road. <br>
+                Warri, Delta State, Nigeria.   
+                </p>
+            </div>
+
+            <div class="footer-text4">
+                <h3 class="footer-h3">
+                Opening Hours
+                </h3>
+
+                <p class="footer-p4">
+                Mon - Sat: <br>
+                10:00 AM - 9:00 PM 
+                <br>
+                <br>
+                Sunday: <br>
+                12:00 PM - 7:00 PM
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">&copy 2026 De Haven Hub, All rights reserved.</p> 
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
